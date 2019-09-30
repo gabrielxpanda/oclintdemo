@@ -6,6 +6,20 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		943446952341D4350063C518 /* oclint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 943446982341D4350063C518 /* Build configuration list for PBXAggregateTarget "oclint" */;
+			buildPhases = (
+				943446992341D43A0063C518 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = oclint;
+			productName = oclint;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		943446842341A59B0063C518 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 943446832341A59B0063C518 /* AppDelegate.m */; };
 		943446862341A59D0063C518 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 943446852341A59D0063C518 /* Assets.xcassets */; };
@@ -48,7 +62,6 @@
 				937E6B116E421F3D268AE26C /* Pods-oclintdemo.debug.xcconfig */,
 				678254F948D8B5D38AB90250 /* Pods-oclintdemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -104,6 +117,7 @@
 				9434467B2341A59B0063C518 /* Sources */,
 				9434467C2341A59B0063C518 /* Frameworks */,
 				9434467D2341A59B0063C518 /* Resources */,
+				9434469A2341D90F0063C518 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -126,6 +140,9 @@
 					9434467E2341A59B0063C518 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
+					943446952341D4350063C518 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
 				};
 			};
 			buildConfigurationList = 9434467A2341A59B0063C518 /* Build configuration list for PBXProject "oclintdemo" */;
@@ -142,6 +159,7 @@
 			projectRoot = "";
 			targets = (
 				9434467E2341A59B0063C518 /* oclintdemo */,
+				943446952341D4350063C518 /* oclint */,
 			);
 		};
 /* End PBXProject section */
@@ -159,6 +177,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		943446992341D43A0063C518 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash ./oclint_apply.sh\n";
+		};
+		9434469A2341D90F0063C518 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash ./oclint_result_show.sh\n";
+		};
 		CE363ACD0732901A67AA4FD7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -356,6 +408,24 @@
 			};
 			name = Release;
 		};
+		943446962341D4350063C518 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S9HRLGS74P;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		943446972341D4350063C518 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S9HRLGS74P;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -373,6 +443,15 @@
 			buildConfigurations = (
 				943446902341A59D0063C518 /* Debug */,
 				943446912341A59D0063C518 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		943446982341D4350063C518 /* Build configuration list for PBXAggregateTarget "oclint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				943446962341D4350063C518 /* Debug */,
+				943446972341D4350063C518 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
